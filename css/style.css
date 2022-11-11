@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+header{
+    height: 75px;
+    width: calc(100vw - 300px);
+    background-color: black;
+}
+main{
+    width: calc(100vw - 300px);
+    height: calc(100vh - 150px);
+    background-color: orange;
+}
+.sidebar{
+    width: 300px;
+    height: calc(100vh - 75px);
+    background-color: red;
+}
+footer{
+    height: 75px;
+    width: 100vw;
+    background-color: blue;
+}

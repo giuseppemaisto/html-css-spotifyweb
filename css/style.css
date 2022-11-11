@@ -3,26 +3,66 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*struttura principale*/
 .container{
     display: flex;
+    margin: 0 auto;
 }
 header{
     height: 75px;
     width: calc(100vw - 300px);
-    background-color: black;
+    background-color: rgb(9, 11, 18);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+   
 }
 main{
     width: calc(100vw - 300px);
     height: calc(100vh - 150px);
-    background-color: orange;
+    background-color: rgb(21, 25, 33);
 }
 .sidebar{
     width: 300px;
     height: calc(100vh - 75px);
-    background-color: red;
+    background-color: black;
+    padding-left: 15px;
 }
 footer{
     height: 75px;
     width: 100vw;
-    background-color: blue;
+    background-color: rgb(39, 39, 39);
 }
+
+/*stile header*/
+header button{
+    height: 50%;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    
+/*stile sidebar*/  
+}
+.logo{
+    width: 65%;
+    margin-top: 10px;
+ }
+ .home{
+    padding-top: 20px;
+ }
+.home ul{
+    list-style-type: none;
+    color: gray;
+    line-height: 25px;
+    
+ }
+ .img-menu{
+    height: 20px;
+    vertical-align: center;
+    color: grey;
+    filter: invert(0.5)
+ }

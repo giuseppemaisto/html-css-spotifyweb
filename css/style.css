@@ -107,7 +107,7 @@ ul{
  }
  .utente hr{
     margin-top: 10px;
-    width: 75%;
+    width: 85%;
     color: grey;
  }
  .profile strong{
@@ -124,3 +124,92 @@ ul{
     margin-top: 10px;
  }
  /*fine sidebar*/
+
+
+ /*footer*/
+ .container-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+ }
+ .col-20{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+ .col-40{
+    padding-top: 5px;
+    width: 40%;
+    height: 100%;
+   
+ }
+ .brano{
+    display: flex;
+ }
+ .brano img{
+    padding: 10px 0 10px 10px;
+    height: 70px;
+ }
+ .brano-text{
+    padding: 15px 0 0 10px;
+ }
+ .brano-text h5{
+    color: white;
+ }
+ .brano-text h6{
+    color: grey;
+ }
+ .icone{
+    padding: 20px;
+    color: grey;
+   
+ }
+ .icone-col-40{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+ }
+ .barra-avanzamento{
+    padding-top: 10px;
+    display: flex;
+ }
+ .barra-avanzamento hr{
+    width: 80%;
+    height: 8px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: gray;
+ }
+ .barra-avanzamento span{
+    font-size: 12px;
+    color: white;
+    padding-bottom: 10px;
+    vertical-align: middle;
+ }
+ .volume{
+    color: white;
+    
+ }
+ .icone-volume{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding-top:25px;
+ }
+ .barra-volume{
+    width: 50%;
+    padding-top:30px;
+   margin-right: 20px;
+ }
+ .barra-volume hr{
+    height: 4px;
+    color: gray;
+    border: 1px solid gray;
+    background-color: gray;
+ }

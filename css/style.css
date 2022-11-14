@@ -167,7 +167,9 @@ ul{
    flex-wrap: wrap;
    margin-top: 10px;
 }
-
+.suggeriti{
+   height: 200px;
+}
 .song{
    height: 200px;
    width: calc(98% / 2);
@@ -188,9 +190,19 @@ ul{
 }
 .text-song h4{
   color: white;
+  font-family: sans-serif;
 }
 .text-song h5{
-   color: gray
+   color: gray;
+   font-family: sans-serif;
+ }
+h5{
+   color: gray;
+   padding-left: 10px;
+ }
+ h3{
+   font-family: sans-serif;
+   padding-left: 10px;
  }
  /*footer*/
  .container-footer{

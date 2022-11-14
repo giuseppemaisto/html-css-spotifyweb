@@ -173,7 +173,7 @@ ul{
 .song{
    height: 200px;
    width: calc(98% / 2);
-   margin: 0 auto;
+   
    
    
    
@@ -341,6 +341,13 @@ h5{
       padding-top: 25px;
       flex-direction: row;
    }
+   .contenuto{
+      
+   }
+   .song{
+      width: calc(98% / 4);
+      flex-wrap: wrap;
+   }
  }
 
  @media screen and (min-width: 992px){
@@ -352,5 +359,13 @@ h5{
    }
    header{
       width: calc(100vw - 250px);
+     }
+     .contenuto{
+      height: 300px;
+     }
+     .song{
+      width: calc(100% / 6)
+
+
      }
  }

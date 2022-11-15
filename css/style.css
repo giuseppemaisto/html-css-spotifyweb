@@ -151,16 +151,18 @@ ul{
 }
 .nav{
    height: 75px;
-   width: 100%;
-  z-index: 1;
+   width: 80%;
+  
    position: fixed;
-   margin: 0 auto
+  margin: 0 auto;
 }
 .nav ul{
    list-style-type: none;
    display: flex;
-   font-size: 10px;
+   flex-wrap: wrap;
+   font-size: 12px;
    justify-content: space-around;
+   margin: 0 auto;
 }
 
 

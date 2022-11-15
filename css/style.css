@@ -79,7 +79,8 @@ ul{
  .hr-menu{
    margin: 0 auto;
    width: 50%;
-   color: lightgreen;
+   border: 1px solid lightgreen;
+  
  }
  
  .img-menu{
@@ -103,6 +104,12 @@ ul{
     display: none;
     
  }
+ .playlist ul li:hover {
+   color: #fff;
+}
+.icone-mobile ul li:hover {
+   filter: invert(1);
+}
  .playlist h4{
     color: white;
     margin-bottom: 20px;
@@ -250,7 +257,7 @@ h5{
  }
 
  .col-40{
-    padding-top: 5px;
+    padding-top: 10px;
     width: 40%;
     height: 100%;
    
@@ -292,34 +299,23 @@ h5{
     color: white;
  }
  .barra-avanzamento{
-    padding-top: 20px;
+    margin: 0 auto;
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
  }
- #yellow{
-   width: 20%;
+ .time-score{
+   width: 60%;
    height: 5px;
-   margin: 0 auto;
-   border: 1px solid yellowgreen;
-   border-radius: 5px;
-   background-color: yellowgreen;
-   margin-left: 7%;
+   background-color: gray;
+   border-radius: 10px;
  }
- .barra-avanzamento hr{
-    width: 60%;
-    height: 5px;
-    margin: 0 auto;
-    border: 1px solid gray;
-    border-radius: 5px;
-    background-color: gray;
-    margin-right: 7%;
+ .min{
+   color: white;
  }
- .barra-avanzamento span{
-    font-size: 10px;
-    color: white;
-    margin: 5 px;
- }
+
  .volume{
     color: white;
     

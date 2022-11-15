@@ -11,7 +11,7 @@
 header{
     height: 75px;
     width: calc(100vw - 50px);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.9);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -26,7 +26,7 @@ main{
 }
 .sidebar{
     width: 50px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 75px);
     background-color: black;
     padding-left: 15px;
 }
@@ -34,6 +34,7 @@ footer{
     height: 75px;
     width: 100vw;
     background-color: rgb(39, 39, 39);
+    position: fixed;
 }
 
 /*stile header*/
@@ -74,6 +75,9 @@ ul{
     color: gray;
     line-height: 25px;
     
+ }
+ .playlist:hover li{
+   color: white;
  }
  .img-menu{
     height: 20px;
@@ -161,7 +165,7 @@ ul{
 
 
 .contenuto{
-   height: 900px;
+   height: 90%;
    width: 100%;
    display: flex;
    flex-wrap: wrap;
@@ -173,7 +177,8 @@ ul{
 .song{
    height: 200px;
    width: calc(98% / 2);
-   
+   margin-bottom: 80px;
+   position: relative;
    
    
    
@@ -204,6 +209,23 @@ h5{
    font-family: sans-serif;
    padding-left: 10px;
  }
+.play-hover{
+   text-align: center;
+   padding-top: 30%;
+   width: 100%;
+   height: 90%;
+   color: white;
+   position: absolute;
+   z-index: 1;
+   background-color: rgba(0,0,0,0.3);
+   display: none;
+}
+.song:hover .play-hover{
+   display: block;
+}
+.art-popolari img{
+   border-radius: 100px;
+}
  /*footer*/
  .container-footer{
     width: 100%;
@@ -242,19 +264,18 @@ h5{
     color: grey;
  }
  .icone{
-   margin: 5px;
+   width: 30%;
    display: flex;
-    padding: 20px;
+   padding: 25px 0 0 10px;
     color: grey;
-    justify-content: space-between;
+    
+    flex-direction: column;
    
  }
- .fa-heart{
-   width: 5px;
+ .ha-heart{
+   padding-left: 5px;
  }
- .fa-folder{
-   width: 5px;
- }
+
  .icone-col-40{
     width: 90%;
     margin: 0 auto;
@@ -265,19 +286,31 @@ h5{
  .barra-avanzamento{
     padding-top: 20px;
     display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+ #yellow{
+   width: 20%;
+   height: 5px;
+   margin: 0 auto;
+   border: 1px solid yellowgreen;
+   border-radius: 5px;
+   background-color: yellowgreen;
+   margin-left: 7%;
  }
  .barra-avanzamento hr{
-    width: 80%;
+    width: 60%;
     height: 5px;
     margin: 0 auto;
     border: 1px solid gray;
     border-radius: 5px;
     background-color: gray;
+    margin-right: 7%;
  }
  .barra-avanzamento span{
     font-size: 10px;
     color: white;
-    
+    margin: 5 px;
  }
  .volume{
     color: white;
@@ -327,8 +360,13 @@ h5{
   }
   .playlist{
    display: block;
+   overflow-y: auto;
   }
   .utente{
+   display: block;
+   margin-bottom: 40px;
+  }
+  .logo{
    display: block;
   }
   main{
@@ -341,12 +379,13 @@ h5{
       padding-top: 25px;
       flex-direction: row;
    }
-   .contenuto{
-      
-   }
+ 
    .song{
       width: calc(98% / 4);
       flex-wrap: wrap;
+   }
+   .icone{
+      flex-direction: row;
    }
  }
 
